@@ -1,9 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Student yongzik = new Student(3,"김용현");
+        Cookie cookie = new Cookie("용현 쿠키");
 
-        String name = yongzik.getName();
-        Integer score = yongzik.getScore();
+        System.out.println(cookie.getHp());
+
+        cookie.run();
+        cookie.run();
+
+        cookie.setHp(200);
+        System.out.println(cookie.getHp());
+        cookie.run();
 
 
     }
