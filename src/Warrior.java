@@ -4,6 +4,6 @@ public class Warrior extends Character{
     }
 
     public void attack(){
-        System.out.println(getName()+"이 검으로 공격합니다! (공격력: "+getAttackPower()+")");
+        System.out.println(getName()+"이 검으로 공격합니다!!!!! (공격력: "+getAttackPower()+")");
     }
 }
