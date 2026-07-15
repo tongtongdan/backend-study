@@ -6,6 +6,10 @@ public class Cookie {
         this.name=name;
         hp=100;
     }
+    public Cookie(String name,int hp){
+        this.name=name;
+        this.hp=hp;
+    }
     public void run(){
         hp-=10;
         System.out.println("\'"+name+"\' 가 달립니다. 현재 체력: "+ hp + "hp");
@@ -19,4 +23,5 @@ public class Cookie {
     public void setHp(int hp){
         this.hp=hp;
     }
+    public String getName(){return name;}
 }

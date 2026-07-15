@@ -1,11 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Cookie cookie=new Cookie("용감한 쿠키");
-        System.out.println(cookie.getHp());
-        cookie.run();
-        cookie.run();
-        cookie.setHp(150);
-        System.out.println(cookie.getHp());
-        cookie.run();
+        WizardCookie wizardCookie = new WizardCookie("마법사 쿠키");
+        WizardCookie wizardCookie2 = new WizardCookie("마법마법 쿠키",120,70);
+        wizardCookie.showInfo();
+        wizardCookie2.showInfo();
     }
 }
