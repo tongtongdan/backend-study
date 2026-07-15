@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Student s = new Student("홍길동", 20, "서강대학교");
-        s.showInfo();
 
-        Man man=new Man("나",20);
-        man.showInfo();
+        Wizard wizard=new Wizard("해찬",5);
+        Character c1=wizard;
+
+        Character c2=new Warrior("지오");
+
+        c1.showInfo();
+        c2.showInfo();
+
     }
 }
