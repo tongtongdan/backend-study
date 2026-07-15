@@ -1,26 +1,45 @@
 public class Cookie {
+
     private String name;
     private int hp;
 
-    Cookie(String name){
+    public Cookie() {
+        this.name = "이름없음";
+        this.hp = 100;
+    }
+
+    public Cookie(String name){
         this.name = name;
         this.hp = 100;
     }
 
+    public Cookie(String name, int hp){
+        this.name = name;
+        this.hp = hp;
+    }
+
     public void run(){
-        this.hp -=10;
-        System.out.println("이름은" + this.name + "이고요 " + this.hp + "hp입니다.");
+        this.hp -= 10;
+        System.out.println(name + "가 달립니다. 현재 체력: " + hp + "hp");
     }
 
     public void attack(){
-        System.out.println(this.name + "가 공격합니다.");
-   }
+        System.out.println(name + "가 공격합니다");
+    }
 
-   public int getHp(){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHp() {
         return hp;
-   }
+    }
 
-   public void setHp(int hp){
+    public void setHp(int hp) {
         this.hp = hp;
-   }
+    }
 }
