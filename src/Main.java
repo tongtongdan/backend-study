@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        WizardCookie wizardCookie = new WizardCookie("마법사 쿠키");
-        WizardCookie wizardCookie2 = new WizardCookie("마법마법 쿠키",120,70);
-        wizardCookie.showInfo();
-        wizardCookie2.showInfo();
+        Student s = new Student("홍길동", 20, "서강대학교");
+        s.showInfo();
+
+        Man man=new Man("나",20);
+        man.showInfo();
     }
 }
